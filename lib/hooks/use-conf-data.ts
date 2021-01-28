@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { createContext, useContext } from 'react';
+import * as React from 'react';
 
 export type PageState = 'registration' | 'ticket';
 
@@ -31,10 +31,10 @@ type ConfDataContextType = {
   setPageState: React.Dispatch<React.SetStateAction<PageState>>;
 };
 
-export const ConfDataContext = createContext<ConfDataContextType | null>(null);
+export const ConfDataContext = React.createContext<ConfDataContextType | null>(null);
 
 export default function useConfData() {
-  const result = useContext(ConfDataContext);
+  const result = React.useContext(ConfDataContext);
   if (!result) {
     throw new Error();
   }
