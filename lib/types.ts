@@ -59,10 +59,11 @@ export type Sponsor = {
   callToAction: string;
   callToActionLink: string;
   links: SponsorLink[];
-  discord: string;
+  instagram: string;
+  facebook: string;
   tier: string;
   cardImage: Image;
-  logo: Image;
+  photo: Image;
   youtubeSlug: string;
 };
 

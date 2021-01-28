@@ -61,7 +61,7 @@ export default function SponsorSection({ sponsor }: Props) {
           <div className={styles['name-and-logo']}>
             <Image
               alt={sponsor.name}
-              src={sponsor.logo.url}
+              src={sponsor.photo.url}
               className={styles.image}
               loading="lazy"
               title={sponsor.name}
@@ -82,13 +82,22 @@ export default function SponsorSection({ sponsor }: Props) {
               {sponsor.callToAction}
             </a>
             <a
-              href={sponsor.discord}
+              href={sponsor.instagram}
               target="_blank"
               rel="noopener noreferrer"
               type="button"
               className={cn(styles.button, styles['button-link'])}
             >
-              Chat on Discord
+              Siga-nós no instagram
+            </a>
+            <a
+              href={sponsor.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              type="button"
+              className={cn(styles.button, styles['button-link'])}
+            >
+              Siga-nós no Facebook
             </a>
           </div>
           <div className={styles.resources}>

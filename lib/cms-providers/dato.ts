@@ -99,14 +99,15 @@ export async function getAllStages(): Promise<Stage[]> {
 export async function getAllSponsors(): Promise<Sponsor[]> {
   const data = await fetchCmsAPI(`
     {
-      allCompanies(first: 100, orderBy: tierRank_ASC) {
+      allTeams(first: 100, orderBy: tierRank_ASC) {
         name
         description
         slug
         website
         callToAction
         callToActionLink
-        discord
+        instagram
+        facebook
         youtubeSlug
         tier
         links {
@@ -116,7 +117,7 @@ export async function getAllSponsors(): Promise<Sponsor[]> {
         cardImage {
           url(imgixParams: {fm: jpg, fit: crop})
         }
-        logo {
+        photo {
           url(imgixParams: {fm: jpg, fit: crop, w: 100, h: 100})
         }
       }
