@@ -17,3 +17,6 @@
 /// <reference types="next" />
 /// <reference types="next/types/global" />
 /// <reference types="node" />
+/// <reference types="node/types/global" />
+/// <reference types="react" />
+/// <reference types="react/types/global" />
