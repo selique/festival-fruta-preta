@@ -51,7 +51,6 @@ export async function getAllSpeakers(): Promise<Speaker[]> {
         slug
         twitter
         github
-        company
         talk {
           title
           description
