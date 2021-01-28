@@ -1,10 +1,10 @@
 {
-  "name": "Virtual Event Starter Kit",
-  "description": "Fully customizable starter kit for your virtual event.",
+  "name": "Festival Fruta Preta",
+  "description": "Portal de eventos Festival Fruta Preta.",
   "previewImage": "https://demo.vercel.events/twitter-card.png",
-  "datocmsProjectId": "37685",
+  "datocmsProjectId": "41649",
   "deploymentType": "vercel",
-  "buildCommand": "npm run build",
+  "buildCommand": "yarn run build",
   "datocmsApiTokenEnvName": "DATOCMS_READ_ONLY_API_TOKEN",
-  "livePreviewUrl": "https://demo.vercel.events/"
+  "livePreviewUrl": "https://frutapreta.com.br/"
 }
