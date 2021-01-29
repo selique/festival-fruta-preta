@@ -14,7 +14,7 @@ type Props = {
   sponsor: Sponsor;
 };
 
-export default function TeamPage({ sponsor }: Props) {
+export default function TeamsPage({ sponsor }: Props) {
   const meta = {
     title: 'Equipe Fruta Preta - Festival',
     description: META_DESCRIPTION

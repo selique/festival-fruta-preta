@@ -109,7 +109,7 @@ export async function getAllSponsors(): Promise<Sponsor[]> {
     }
   `);
 
-  return data.allCompanies;
+  return data.allTeams;
 }
 
 export async function getAllJobs(): Promise<Job[]> {
