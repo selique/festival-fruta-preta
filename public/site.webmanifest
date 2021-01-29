@@ -1,7 +1,7 @@
 {
-  "name": "Virtual Event Starter Kit",
-  "short_name": "Virtual Event Starter Kit",
-  "description": "Virtual Event Starter Kit -> https://demo.vercel.events",
+  "name": "Festival Fruta Preta",
+  "short_name": "Festival Fruta Preta",
+  "description": "Festival Fruta Preta -> https://www.frutapreta.com.br",
   "display": "standalone",
   "start_url": "/",
   "theme_color": "#fff",

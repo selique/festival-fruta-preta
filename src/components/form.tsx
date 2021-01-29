@@ -44,7 +44,7 @@ export default function Form({ sharePage }: Props) {
               setErrorTryAgain(true);
             }}
           >
-            Try Again
+            Tente Novamente
           </button>
         </div>
       </div>
@@ -128,17 +128,17 @@ export default function Form({ sharePage }: Props) {
             onChange={e => setEmail(e.target.value)}
             onFocus={() => setFocused(true)}
             onBlur={() => setFocused(false)}
-            placeholder="Enter email to register free"
-            aria-label="Your email address"
+            placeholder="Digite seu e-mail e acesse gratuitamente"
+            aria-label="Seu enderço de email"
             required
           />
         </label>
         <button
           type="submit"
           className={cn(styles.submit, styles.register, styles[formState])}
-          disabled={formState === 'loading'}
+          disabled={formState === 'carregando'}
         >
-          {formState === 'loading' ? <LoadingDots size={4} /> : <>Register</>}
+          {formState === 'carregando' ? <LoadingDots size={4} /> : <>Acessar</>}
         </button>
       </div>
     </form>
