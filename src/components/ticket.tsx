@@ -64,7 +64,7 @@ export default function Ticket({ username, name, ticketNumber, sharePage }: Prop
               )
             ) : (
               <>
-                You're in. <br /> Make it unique.
+                Bora pro Festival!
               </>
             )}
           </h2>
@@ -75,8 +75,11 @@ export default function Ticket({ username, name, ticketNumber, sharePage }: Prop
               </>
             ) : (
               <>
-                Generate a unique ticket image with <br className={styleUtils['hide-on-mobile']} />
-                your GitHub profile.
+                Aqui está o seu passaporte.
+                <br />
+                Compartilhe com sua galera!
+                <br/>
+                <p className={styles.descriptionSmall}> Clique no botão abaixo para preecher automaticamente com seus dados.</p>
               </>
             )}
           </p>

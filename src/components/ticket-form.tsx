@@ -3,7 +3,7 @@
 import { useState, useRef } from 'react';
 import { scrollTo } from '@lib/smooth-scroll';
 import cn from 'classnames';
-import GithubIcon from '@components/icons/icon-github';
+import InstagramIcon from '@components/icons/icon-instagram';
 import CheckIcon from '@components/icons/icon-check';
 import { REPO, SITE_ORIGIN, TicketGenerationState } from '@lib/constants';
 import isMobileOrTablet from '@lib/is-mobile-or-tablet';
@@ -171,13 +171,13 @@ export default function Form({ defaultUsername = '', setTicketGenerationState }:
           }}
         >
           <div className={ticketFormStyles.generateWithGithub}>
-            <span className={ticketFormStyles.githubIcon}>
-              <GithubIcon color="#fff" size={24} />
+            <span className={ticketFormStyles.instagramIcon}>
+              <InstagramIcon color="#fff" size={24} />
             </span>
             {formState === 'loading' ? (
               <LoadingDots size={4} />
             ) : (
-              username || 'Generate with GitHub'
+              username || 'Entre com Instagram'
             )}
           </div>
           {username ? (
@@ -191,14 +191,14 @@ export default function Form({ defaultUsername = '', setTicketGenerationState }:
             'Only public info will be used.'
           ) : (
             <>
-              GitHub OAuth app is required.{' '}
+              Instagram OAuth app é necessario.{' '}
               <a
                 href={`${REPO}#authentication`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={ticketFormStyles['learn-more']}
               >
-                Learn more.
+                Leia mais.
               </a>
             </>
           )}

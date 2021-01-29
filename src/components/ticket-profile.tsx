@@ -1,7 +1,7 @@
 
 
 import { TicketGenerationState } from '@lib/constants';
-import GithubIcon from '@components/icons/icon-github';
+import IconInstagram from '@components/icons/icon-instagram';
 import cn from 'classnames';
 import IconAvatar from './icons/icon-avatar';
 import styles from './ticket-profile.module.css';
@@ -40,7 +40,7 @@ export default function TicketProfile({ name, username, size = 1, ticketGenerati
               [styles.show]: ticketGenerationState === 'loading'
             })}
           >
-            {name || username || 'Your Name'}
+            {name || username || 'Seu Nome'}
           </span>
         </p>
         <p className={styles.username}>
@@ -50,9 +50,9 @@ export default function TicketProfile({ name, username, size = 1, ticketGenerati
             })}
           >
             <span className={styles.githubIcon}>
-              <GithubIcon color="var(--secondary-color)" size={20 * size} />
+              <IconInstagram color="var(--secondary-color)" size={20 * size} />
             </span>
-            {username || <>username</>}
+            {username || <>Seu Nome</>}
           </span>
         </p>
       </div>

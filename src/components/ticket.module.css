@@ -36,9 +36,25 @@
   }
 }
 
+.descriptionSmall {
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--secondary-color);
+  margin: 30px auto;
+  max-width: 350px;
+}
+
+@media (min-width: 768px) {
+  .descriptionSmall {
+    font-size: 14px;
+    max-width: 415px;
+  }
+}
+
 .ticket-text {
   margin-bottom: 30px;
 }
+
 
 .ticket-layout {
   display: grid;

@@ -43,6 +43,11 @@
 
 .info :global(p) {
   margin: 0;
+  text-align: center;
+}
+
+.description-small {
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -62,5 +67,25 @@
     font-size: var(--space-8x);
     max-width: 531px;
     margin: 40px auto;
+  }
+
+  .description-small {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .description-separator{
+    height: 1px;
+    width: 24px;
+    background: var(--secondary-color);
+    margin: var(--space-4x) 0;
+  }
+  .info  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }

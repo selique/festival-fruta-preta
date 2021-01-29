@@ -3,7 +3,7 @@
 import cn from 'classnames';
 import styleUtils from './utils.module.css';
 import styles from './hero.module.css';
-import { BRAND_NAME, DATE, SITE_DESCRIPTION } from '@lib/constants';
+import { SITE_NAME, SITE_DESCRIPTION } from '@lib/constants';
 
 export default function Hero() {
   return (
@@ -19,8 +19,8 @@ export default function Hero() {
         {SITE_DESCRIPTION}
       </h2>
       <h1 className={cn(styleUtils.appear, styleUtils['appear-third'], styles.hero)}>
-        The first {BRAND_NAME}
-        <br className={styleUtils['show-on-desktop']} /> global user conference
+        {SITE_NAME}
+        <br className={styleUtils['show-on-desktop']} />
       </h1>
       <h2
         className={cn(
@@ -33,7 +33,11 @@ export default function Hero() {
         {SITE_DESCRIPTION}
       </h2>
       <div className={cn(styleUtils.appear, styleUtils['appear-fourth'], styles.info)}>
-        <p>{DATE}</p>
+        <p>
+          <strong>2021</strong>
+        </p>
+        <div className={styles['description-separator']} />
+        <p className={styles['description-small']}>Jabuticaba <strong>nasce</strong> em roseira</p>
         <div className={styles['description-separator']} />
         <p>
           <strong>Online</strong>

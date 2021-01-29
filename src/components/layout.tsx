@@ -1,5 +1,3 @@
-
-
 import Link from 'next/link';
 import cn from 'classnames';
 import { useRouter } from 'next/router';
@@ -24,6 +22,7 @@ export default function Layout({ children, className, hideNav, layoutStyles }: P
 
   return (
     <>
+      {/* <video className={styles['header-logos']} src={require('./novo.mp4')} playinline autoplay muted loop /> */}
       <ViewSource />
       <div className={styles.background}>
         {!hideNav && (
@@ -33,7 +32,7 @@ export default function Layout({ children, className, hideNav, layoutStyles }: P
               <Link href="/">
                 {/* eslint-disable-next-line */}
                 <a className={styles.logo}>
-                  <Logo />
+                  <Logo size={'64'}/>
                 </a>
               </Link>
             </div>
