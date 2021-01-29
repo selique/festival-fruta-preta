@@ -61,7 +61,6 @@ export async function getAllStages(): Promise<Stage[]> {
         name
         slug
         stream
-        discord
         schedule {
           title
           start
