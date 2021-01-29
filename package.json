@@ -33,7 +33,7 @@
     "nprogress": "0.2.0",
     "puppeteer-core": "5.5.0",
     "react": "17.0.1",
-    "react-aria": "3.2.0",
+    "react-aria": "3.3.0",
     "react-dom": "17.0.1",
     "smoothscroll-polyfill": "0.4.4",
     "swr": "0.3.9",
