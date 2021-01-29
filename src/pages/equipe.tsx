@@ -15,7 +15,7 @@ type Props = {
   sponsors: Sponsor[];
 };
 
-export default function ExpoPage({ sponsors }: Props) {
+export default function EquipePage({ sponsors }: Props) {
   const meta = {
     title: 'Equipe, Patrocinadores e Realizadores do Festival Fruta Preta',
     description: META_DESCRIPTION
