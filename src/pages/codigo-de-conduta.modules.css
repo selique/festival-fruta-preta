@@ -1,0 +1,46 @@
+.layout {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.container {
+	display: block;
+	padding: 6px;
+	min-width: initial;
+}
+
+.text {
+	font-size: 20px;
+	color: var(--secondary-color);
+	padding: 0 24px;
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+}
+
+li > .text {
+	font-size: 18px;
+	padding: 0;
+	line-height: 1;
+}
+
+.headingText {
+	font-size: 28px;
+	line-height: 1;
+	font-weight: 800;
+	margin: var(--space-8x) 24px var(--space-2x);
+}
+
+.askText {
+	font-size: 24px;
+	line-height: 1;
+	font-weight: 800;
+	margin: var(--space-6x) 24px var(--space-2x);
+}
+
+.askBox {
+	border: solid 1px var(--secondary-color);
+	border-radius: var(--space-2x);
+	margin: var(--space-6x);
+}

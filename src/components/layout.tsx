@@ -7,61 +7,61 @@ import styles from './layout.module.css';
 import Logo from './icons/icon-logo';
 import MobileMenu from './mobile-menu';
 import Footer, { HostedByVercel } from './footer';
-import ViewSource from '@components/view-source';
+// import ViewSource from '@components/view-source';
 
 type Props = {
-  children: React.ReactNode;
-  className?: string;
-  hideNav?: boolean;
-  layoutStyles?: any;
+	children: React.ReactNode;
+	className?: string;
+	hideNav?: boolean;
+	layoutStyles?: any;
 };
 
 export default function Layout({ children, className, hideNav, layoutStyles }: Props) {
-  const router = useRouter();
-  const activeRoute = router.asPath;
+	const router = useRouter();
+	const activeRoute = router.asPath;
 
-  return (
-    <>
-      {/* <video className={styles['header-logos']} src={require('./novo.mp4')} playinline autoplay muted loop /> */}
-      <ViewSource />
-      <div className={styles.background}>
-        {!hideNav && (
-          <header className={cn(styles.header)}>
-            <div className={styles['header-logos']}>
-              <MobileMenu key={router.asPath} />
-              <Link href="/">
-                {/* eslint-disable-next-line */}
-                <a className={styles.logo}>
-                  <Logo size={'64'}/>
-                </a>
-              </Link>
-            </div>
-            <div className={styles.tabs}>
-              {NAVIGATION.map(({ name, route }) => (
-                <Link key={name} href={route}>
-                  <a
-                    className={cn(styles.tab, {
-                      [styles['tab-active']]: activeRoute.startsWith(route)
-                    })}
-                  >
-                    {name}
-                  </a>
-                </Link>
-              ))}
-            </div>
-            <div className={cn(styles['header-right'])}>
-              <HostedByVercel />
-            </div>
-          </header>
-        )}
-        <div className={styles.page}>
-          <main className={styles.main} style={layoutStyles}>
-            <SkipNavContent />
-            <div className={cn(styles.full, className)}>{children}</div>
-          </main>
-          {!activeRoute.startsWith('/stage') && <Footer />}
-        </div>
-      </div>
-    </>
-  );
+	return (
+		<>
+			{/* <video className={styles['header-logos']} src={require('./novo.mp4')} playinline autoplay muted loop /> */}
+			{/* <ViewSource /> */}
+			<div className={styles.background}>
+				{!hideNav && (
+					<header className={cn(styles.header)}>
+						<div className={styles['header-logos']}>
+							<MobileMenu key={router.asPath} />
+							<Link href="/">
+								{/* eslint-disable-next-line */}
+								<a className={styles.logo}>
+									<Logo size={'64'} />
+								</a>
+							</Link>
+						</div>
+						<div className={styles.tabs}>
+							{NAVIGATION.map(({ name, route }) => (
+								<Link key={name} href={route}>
+									<a
+										className={cn(styles.tab, {
+											[styles['tab-active']]: activeRoute.startsWith(route)
+										})}
+									>
+										{name}
+									</a>
+								</Link>
+							))}
+						</div>
+						<div className={cn(styles['header-right'])}>
+							<HostedByVercel />
+						</div>
+					</header>
+				)}
+				<div className={styles.page}>
+					<main className={styles.main} style={layoutStyles}>
+						<SkipNavContent />
+						<div className={cn(styles.full, className)}>{children}</div>
+					</main>
+					{!activeRoute.startsWith('/stage') && <Footer />}
+				</div>
+			</div>
+		</>
+	);
 }
