@@ -12,6 +12,10 @@
   cursor: pointer;
 }
 
+.cardContainer {
+  padding: 1rem;
+}
+
 .card:hover,
 .card:focus {
   outline: none;
@@ -19,25 +23,10 @@
     linear-gradient(to right, var(--brand), var(--brand));
 }
 
-.grid {
-  width: 100%;
-  margin: 50px auto;
-  padding: 0 24px;
-}
-
 @media (min-width: 768px) {
   .card {
-    margin-bottom: 0;
+    margin:1rem;
   }
-  .grid {
-    display: grid;
-    grid-gap: 24px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  }
-}
-
-.silver {
-  border-radius: 6px;
 }
 
 .cardBody {
@@ -51,20 +40,14 @@
 
 .imageWrapper {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: relative;
   display: flex;
 }
 
 .image {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+
+  border-radius: 1000px;
 }
 
 .name {
