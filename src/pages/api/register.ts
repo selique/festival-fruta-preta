@@ -56,19 +56,19 @@ export default async function register(
 	await doc.loadInfo();
 	const sheet = doc.sheetsByIndex[0];
 	const rows = await sheet.getRows();
-	const maprows = rows.map(({ id, email, createAt, ticketNumber }) => {
+	const maprows = rows.map(({ id, email, ticketNumber, createAt, name, username }) => {
 		return {
 			id,
 			email,
+			ticketNumber,
 			createAt,
-			ticketNumber
+			name,
+			username
 		};
 	});
-	console.log(maprows);
-	const resposta = maprows.filter(item => item.email === email);
-	console.log(resposta);
+	const resposta = maprows.filter(item => item.email === req.body.email);
 
-	if (email === resposta) {
+	if (resposta.length !== 0) {
 		console.log('ja tem cadastrado');
 		name = resposta[0].email;
 		username = resposta[0].email;
@@ -80,7 +80,7 @@ export default async function register(
 		console.log('nao tem cadastrado');
 		await sheet.addRow({
 			id: nanoid(),
-			email: email,
+			email: req.body.email,
 			ticketNumber: '',
 			createdAt: Date.now(),
 			name: '',
@@ -97,7 +97,7 @@ export default async function register(
 			sameSite: 'strict',
 			secure: process.env.NODE_ENV === 'production',
 			path: '/api',
-			expires: new Date(Date.now() + ms('7 days'))
+			expires: new Date(Date.now() + ms('356 days'))
 		})
 	);
 
