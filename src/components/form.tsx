@@ -1,5 +1,3 @@
-
-
 import { useState } from 'react';
 import cn from 'classnames';
 import useConfData from '@lib/hooks/use-conf-data';
@@ -80,13 +78,13 @@ export default function Form({ sharePage }: Props) {
 										key =>
 											`${encodeURIComponent(key)}=${encodeURIComponent(
 												params[key as keyof typeof params] || ''
-                      )}`
-                  )
-                  .join('&');
-                router.replace(`/?${queryString}`, '/');
-              } else {
-                setUserData(params);
-                setPageState('ticket');
+											)}`
+									)
+									.join('&');
+								router.replace(`/?${queryString}`, '/');
+							} else {
+								setUserData(params);
+								setPageState('ticket');
 							}
 						})
 						.catch(async err => {
