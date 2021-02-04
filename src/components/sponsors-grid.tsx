@@ -41,7 +41,7 @@ type Props = {
 export default function SponsorsGrid({ sponsors }: Props) {
 
   return (
-    <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}} className={styles.cardContainer} >
+    <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 4}} className={styles.cardContainer} >
       <Masonry gutter={'20'}>
         {sponsors.map(sponsor => (
           <SponsorCard key={sponsor.name} sponsor={sponsor} />
