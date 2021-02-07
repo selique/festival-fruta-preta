@@ -96,7 +96,7 @@ export default async function register(
 		cookie.serialize(COOKIE, id, {
 			httpOnly: true,
 			sameSite: 'strict',
-			secure: process.env.NODE_ENV === 'production',
+			secure: process.env.VERCEL_ENV === 'production' || process.env.VERCEL_ENV === 'preview',
 			path: '/api',
 			expires: new Date(Date.now() + ms('356 days'))
 		})
