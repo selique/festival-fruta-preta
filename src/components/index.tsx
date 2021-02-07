@@ -41,6 +41,7 @@ export default function Conf({
 						<Ticket
 							username={userData.username}
 							name={userData.name}
+							id={userData.id}
 							ticketNumber={userData.ticketNumber}
 							sharePage={sharePage}
 						/>

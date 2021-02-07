@@ -42,7 +42,6 @@ export default async function register(
 	// Initialize Auth - see more available options at https://theoephraim.github.io/node-google-spreadsheet/#/getting-started/authentication
 	// await doc.useApiKey(process.env.GOOGLE_SHEETS_API_KEY);
 	const { privateKey } = JSON.parse(process.env.GOOGLE_PRIVATE_KEY || '{ privateKey: null }');
-	console.log(privateKey);
 	await doc.useServiceAccountAuth({
 		client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
 		private_key: privateKey

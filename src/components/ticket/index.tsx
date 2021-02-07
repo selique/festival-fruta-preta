@@ -6,7 +6,7 @@ import { TicketGenerationState } from '@lib/constants';
 import isMobileOrTablet from '@lib/is-mobile-or-tablet';
 import { scrollTo } from '@lib/smooth-scroll';
 import styles from './ticket.module.css';
-import styleUtils from './utils.module.css';
+import styleUtils from '../../components/utils.module.css';
 import TicketForm from './components/ticket-form';
 import TicketVisual from './components/ticket-visual';
 import TicketActions from './components/ticket-actions';
@@ -16,12 +16,13 @@ import Form from '../form';
 
 type Props = {
 	username: UserData['username'];
+	id: UserData['id'];
 	ticketNumber: UserData['ticketNumber'];
 	name: UserData['name'];
 	sharePage?: boolean;
 };
 
-export default function Ticket({ username, name, ticketNumber, sharePage }: Props) {
+export default function Ticket({ username, id, name, ticketNumber, sharePage }: Props) {
 	const ticketRef = useRef<HTMLDivElement>(null);
 	const [ticketGenerationState, setTicketGenerationState] = useState<TicketGenerationState>(
 		'default'
@@ -99,20 +100,14 @@ export default function Ticket({ username, name, ticketNumber, sharePage }: Prop
 					/>
 				</div>
 				{!sharePage && (
-					<>
-						{username ? (
-							<div>
-								<div className={styles['ticket-actions']}>
-									<TicketActions username={username} />
-								</div>
-								<div className={styles['ticket-copy']}>
-									<TicketCopy username={username} />
-								</div>
-							</div>
-						) : (
-							<div className={styles['ticket-actions-placeholder']} />
-						)}
-					</>
+					<div>
+						<div className={styles['ticket-actions']}>
+							<TicketActions id={id} />
+						</div>
+						{/* <div className={styles['ticket-copy']}>
+							<TicketCopy username={username} />
+						</div> */}
+					</div>
 				)}
 			</div>
 		</div>

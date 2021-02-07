@@ -48,7 +48,7 @@ export default function TicketProfile({ name, username, size = 1, ticketGenerati
 						})}
 					>
 						<span className={styles.githubIcon}>
-							<IconInstagram color="var(--secondary-color)" size={20 * size} />
+							<IconInstagram width={20 * size} />
 						</span>
 						{username || <>Seu Nome</>}
 					</span>
