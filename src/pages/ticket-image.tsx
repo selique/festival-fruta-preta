@@ -1,7 +1,5 @@
-
-
-import TicketImage from '@components/ticket-image';
+import TicketImage from '@components/ticket/components/ticket-image';
 
 export default function TicketOnlyPage() {
-  return <TicketImage />;
+	return <TicketImage />;
 }
