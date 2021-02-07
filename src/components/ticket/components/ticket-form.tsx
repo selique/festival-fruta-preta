@@ -170,7 +170,7 @@ export default function Form({ defaultUsername = '', setTicketGenerationState }:
 				>
 					<div className={ticketFormStyles.generateWithGithub}>
 						<span className={ticketFormStyles.instagramIcon}>
-							<InstagramIcon color="#fff" size={24} />
+							<InstagramIcon width={24} />
 						</span>
 						{formState === 'loading' ? <LoadingDots size={4} /> : username || 'Entre com Instagram'}
 					</div>
