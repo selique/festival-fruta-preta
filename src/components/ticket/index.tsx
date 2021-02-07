@@ -64,19 +64,19 @@ export default function Ticket({ username, id, name, ticketNumber, sharePage }: 
 							</>
 						) : (
 							<>
-								Aqui está o seu passaporte.
-								<br />
+								{/* Aqui está o seu passaporte.
+								<br /> */}
 								Compartilhe com sua galera!
 								<br />
-								<p className={styles.descriptionSmall}>
+								{/* <p className={styles.descriptionSmall}>
 									{' '}
 									Clique no botão abaixo para preecher automaticamente com seus dados.
-								</p>
+								</p> */}
 							</>
 						)}
 					</p>
 				</div>
-				<div className={cn(styleUtils.appear, styleUtils['appear-third'])}>
+				{/* <div className={cn(styleUtils.appear, styleUtils['appear-third'])}>
 					{!sharePage ? (
 						<TicketForm
 							defaultUsername={username}
@@ -85,10 +85,10 @@ export default function Ticket({ username, id, name, ticketNumber, sharePage }: 
 					) : (
 						<Form sharePage />
 					)}
-				</div>
+				</div> */}
 			</div>
 			<div className={styles['ticket-visual-wrapper']}>
-				<div
+				{/* <div
 					ref={ticketRef}
 					className={cn(styles['ticket-visual'], styleUtils.appear, styleUtils['appear-fourth'])}
 				>
@@ -98,7 +98,7 @@ export default function Ticket({ username, id, name, ticketNumber, sharePage }: 
 						ticketNumber={ticketNumber}
 						ticketGenerationState={ticketGenerationState}
 					/>
-				</div>
+				</div> */}
 				{!sharePage && (
 					<div>
 						<div className={styles['ticket-actions']}>
