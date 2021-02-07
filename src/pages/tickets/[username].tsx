@@ -17,18 +17,11 @@ import {
 type Props = {
 	username: string | null;
 	usernameFromParams: string | null;
-	id: string | null;
 	name: string | null;
 	ticketNumber: number | null;
 };
 
-export default function TicketShare({
-	username,
-	ticketNumber,
-	id,
-	name,
-	usernameFromParams
-}: Props) {
+export default function TicketShare({ username, ticketNumber, name, usernameFromParams }: Props) {
 	if (!ticketNumber) {
 		return <Error statusCode={404} />;
 	}
@@ -38,7 +31,7 @@ export default function TicketShare({
 				title: `${name}’s ${SITE_NAME} Ticket`,
 				description: META_DESCRIPTION,
 				image: `/api/ticket-images/${username}`,
-				url: `${SITE_URL}/tickets/${id}`
+				url: `${SITE_URL}/tickets/${username}`
 		  }
 		: {
 				title: SITE_DESCRIPTION,
@@ -56,7 +49,6 @@ export default function TicketShare({
 			<ConfContent
 				defaultUserData={{
 					username: username || undefined,
-					id: id || '',
 					name: name || '',
 					ticketNumber
 				}}
@@ -78,7 +70,6 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
 					props: {
 						username: username || null,
 						usernameFromParams: username || null,
-						id: id || null,
 						name: name || username || null,
 						ticketNumber: parseInt(ticketNumber, 10) || null
 					},
@@ -90,7 +81,6 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
 			props: {
 				username: null,
 				usernameFromParams: username || null,
-				id: id || null,
 				name: null,
 				ticketNumber: null
 			},
@@ -101,7 +91,6 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
 			props: {
 				username: null,
 				usernameFromParams: username || null,
-				id: id || null,
 				name: null,
 				ticketNumber: SAMPLE_TICKET_NUMBER
 			},
