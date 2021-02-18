@@ -19,7 +19,7 @@
   "dependencies": {
     "@agility/content-fetch": "1.0.0",
     "@agility/content-sync": "0.1.23",
-    "@reach/skip-nav": "0.12.1",
+    "@reach/skip-nav": "0.13.0",
     "@types/google-spreadsheet": "^3.0.2",
     "@types/next": "^9.0.0",
     "@zeit/next-typescript": "^1.1.1",
