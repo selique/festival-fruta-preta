@@ -5,7 +5,7 @@ export const BRAND_NAME = 'Fruta Preta';
 export const SITE_NAME_MULTILINE = ['Fruta', 'Preta', 'LIVE'];
 export const SITE_NAME = 'Festival Fruta Preta';
 export const META_DESCRIPTION =
-	'O Festival Fruta Preta é um evento 100% online promovendo o encontro dos artistas que vivem em Jaboticabal ou possuem alguma relação com a cidade e que estão interessados em mostrar e compartilhar suas produções artísticas.';
+	'O Festival Fruta Preta é um evento 100% online promovendo o encontro de artistas que estão interessados em mostrar e compartilhar suas produções artísticas.';
 export const SITE_DESCRIPTION = 'Festival Fruta Preta é um evento 100% online de cultura e arte';
 export const YEAR_DATE = '2021';
 export const DATE = `2 Fevereiro ${YEAR_DATE}`;

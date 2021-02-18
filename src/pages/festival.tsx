@@ -17,25 +17,15 @@ export default function Festival({ ...props }) {
 					<div className={styles.container}>
 						<h3 className={styles.headingText}>NINGUÉM SABE NADA:</h3>
 						<p className={styles.text}>
-							O Festival Fruta Preta é um espaço de encontro dos artistas que vivem em Jaboticabal
-							ou possuem alguma relação com a cidade e que estão interessados em mostrar e
-							compartilhar suas produções artísticas. O festival foi pensado, está sendo
-							desenvolvido e será executado em uma construção orgânica, independente, fluida, e
-							livre. PLURIVERSIDADE!
+							O festival foi pensado, está sendo desenvolvido e será executado em uma construção
+							orgânica, independente, fluida, e livre. PLURIVERSIDADE!
 						</p>
 						<p className={styles.text}>
-							Ele acontecerá virtualmente a partir de 02 de Fevereiro e… ao longo de 2021.
+							Ele acontece virtualmente a partir de 02 de Fevereiro e… ao longo de 2021.
 						</p>
 						<p className={styles.text}>
-							O festival nasce da produção cultural da cidade de Jaboticabal e se abre ao diálogo
-							com outros artistas, fazedores de cultura e produtores independentes de outros
-							territórios.
-						</p>
-						<p className={styles.text}>
-							A necessidade desse período de anormalidade pede conexões saudáveis, de expressar
-							sentimentos, elaborar e desenvolver uma comunicação amorosa, coletiva e horizontal. Ao
-							contrário do senso comum, onde a arte seria o fruto da loucura, mais do que nunca a
-							arte é a flor da saúde que produzirá as frutas saudáveis: BioAgradável.
+							O festival nasceu da inquietude do ser e se abre ao diálogo com outros artistas,
+							fazedores de cultura e produtores independentes de outros territórios.
 						</p>
 						<h3 className={styles.headingText}>PERGUNTAS E RESPOSTAS</h3>
 						<div className={styles.askBox}>
@@ -49,36 +39,36 @@ export default function Festival({ ...props }) {
 						</div>
 						<div className={styles.askBox}>
 							<h4 className={styles.askText}>
-								Como inscrever minha obra, projeto ou ideia para participar do Festival?
+								Como inscrever minha obra, projeto ou idéia para participar do Festival?
 							</h4>
 							<p className={styles.text}>Há duas formas de participar do Festival Fruta preta:</p>
 							<ul>
 								<li>Sendo convidado pela curadoria do Festival.</li>
-								<li>Inscrevendo sua arte em nosso formulário: </li>
 								<li>
-									Inscrevendo sua ideia de Formação/Educação em nosso formulário:
-									https://forms.gle/xutfqUXyGcjNdFsh6
+									<a href={'https://forms.gle/BGidEvA8A8rhrDTB8'} rel="noopener noreferrer">
+										Inscrevendo sua arte aqui
+									</a>
+									.
+								</li>
+								<li>
+									<a href={'https://forms.gle/xutfqUXyGcjNdFsh6'} rel="noopener noreferrer">
+										Inscrevendo sua ideia de Formação/Educação aqui.
+									</a>
 								</li>
 							</ul>
 						</div>
 						<div className={styles.askBox}>
 							<h4 className={styles.askText}>Como será feita a curadoria das obras?</h4>
 							<p className={styles.text}>
-								O(s) Curador(es) do Festival terão total liberdade para escolherem quais obras irão
-								fazer parte do festival e inseri-las da melhor e mais adequada maneira na
-								programação do festival junto dos organizadores. Os principais fatores que serão
-								levados em consideração serão:
+								Não há curadoria neste Festival. Acreditamos na diversidade de ideias e expressões
+								sem julgamentos estéticos. Mas alguns pontos serão levados em consideração:
 							</p>
 							<ul>
 								<li>
-									Nível de ligação com a cidade de Jaboticabal-SP por parte do artista e/ou da obra.
-									(Não sendo obrigatório possuir alguma ligação com a cidade).
+									Adequação e viabilidade técnica da apresentação/execução da obra ou proposta pelo
+									festival virtual.
 								</li>
-								<li>
-									Adequação e viabilidade técnica da apresentação/execução da obra pelo festival
-									virtual.
-								</li>
-								<li>Sua relevância com a proposta do festival.</li>
+								<li>O nível de entrosamento da obra/ideia com a proposta do festival.</li>
 							</ul>
 						</div>
 						<div className={styles.askBox}>
