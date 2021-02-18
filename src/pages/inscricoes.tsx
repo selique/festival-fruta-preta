@@ -13,7 +13,7 @@ export default function Incricoes({ ...props }) {
 	return (
 		<Page meta={meta} {...props}>
 			<Layout>
-				<Header hero="Inscrições" description={meta.description} />
+				<Header hero="Inscrições" />
 				<div className={styles.layout}>
 					<div className={styles.container}>
 						<div className={styles.formBox}>
@@ -22,7 +22,7 @@ export default function Incricoes({ ...props }) {
 								ESTE FORMULÁRIO É DESTINADO A TODO E QUALQUER ARTISTAS DO UNIVERSO.
 							</p>
 							<a
-								href={'https://forms.gle/uzMcERRTQ1cyMjmJ8'}
+								href={'https://forms.gle/BGidEvA8A8rhrDTB8'}
 								target="_blank"
 								rel="noopener noreferrer"
 								className={cn(styles.button, styles['button-resource'])}
@@ -52,7 +52,7 @@ export default function Incricoes({ ...props }) {
 								Palestras, Rodas de conversas, e Podcasts
 							</p>
 							<a
-								href={'https://forms.gle/fZtSWj6PDyJgNn8cA'}
+								href={'https://forms.gle/xutfqUXyGcjNdFsh6'}
 								target="_blank"
 								rel="noopener noreferrer"
 								className={cn(styles.button, styles['button-resource'])}

@@ -1,13 +1,13 @@
 import cn from 'classnames';
 import styleUtils from './utils.module.css';
-import styles from './contact.module.css';
+import styles from './learn-more.module.css';
 
 export default function LearnMore() {
 	return (
-		<div className={cn(styleUtils.appear, styleUtils['appear-fifth'], styles.contact)}>
-			Conheça o manifesto do{' '}
-			<a href={'/manifesto'} className={styles['contact-email']} rel="noopener noreferrer">
-				Festival Fruta Preta
+		<div className={cn(styleUtils.appear, styleUtils['appear-fifth'], styles.learnMore)}>
+			Para inscrever suas obras, apresentações ou idéias{' '}
+			<a href={'/inscrições'} className={styles['learnMore-email']} rel="noopener noreferrer">
+				clique aqui
 			</a>
 			.
 		</div>
