@@ -17,7 +17,7 @@
     "license": "addlicense -l apache -c 'Festival Fruta-Preta Inc.' components/**/* lib/**/* pages/**/* styles/**/* *.ts *.js"
   },
   "dependencies": {
-    "@agility/content-fetch": "1.0.0",
+    "@agility/content-fetch": "1.0.3",
     "@agility/content-sync": "0.1.23",
     "@reach/skip-nav": "0.13.0",
     "@types/google-spreadsheet": "^3.0.2",
