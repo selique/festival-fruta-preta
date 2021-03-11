@@ -44,7 +44,8 @@ export default function Festival({ ...props }) {
 							<p className={styles.text}>Há duas formas de participar do Festival Fruta preta:</p>
 							<ul>
 								<li>Sendo convidado pela curadoria do Festival.</li>
-								<li>
+								<li>Se inscrevendo no site (incrições abertar sazonialmente).</li>
+								{/* <li>
 									<a href={'https://forms.gle/BGidEvA8A8rhrDTB8'} rel="noopener noreferrer">
 										Inscrevendo sua arte aqui
 									</a>
@@ -54,7 +55,7 @@ export default function Festival({ ...props }) {
 									<a href={'https://forms.gle/xutfqUXyGcjNdFsh6'} rel="noopener noreferrer">
 										Inscrevendo sua ideia de Formação/Educação aqui.
 									</a>
-								</li>
+								</li> */}
 							</ul>
 						</div>
 						<div className={styles.askBox}>

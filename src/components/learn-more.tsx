@@ -12,13 +12,13 @@ export default function LearnMore() {
 				</a>
 				.
 			</div>
-			<div className={cn(styleUtils.appear, styleUtils['appear-fifth'], styles.learnMore)}>
+			{/* <div className={cn(styleUtils.appear, styleUtils['appear-fifth'], styles.learnMore)}>
 				Para inscrever suas obras, apresentações ou idéias{' '}
 				<a href={'/inscricoes'} className={styles['learnMore-email']} rel="noopener noreferrer">
 					clique aqui
 				</a>
 				.
-			</div>
+			</div> */}
 		</>
 	);
 }

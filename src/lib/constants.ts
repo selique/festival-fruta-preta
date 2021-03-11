@@ -56,10 +56,10 @@ export const NAVIGATION = [
 		name: 'Equipe',
 		route: '/equipe'
 	},
-	{
-		name: 'Inscrições',
-		route: '/inscricoes'
-	}
+	// {
+	// 	name: 'Inscrições',
+	// 	route: '/inscricoes'
+	// }
 	// {
 	//   name: 'Jobs',
 	//   route: '/jobs'

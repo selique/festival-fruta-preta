@@ -1,13 +1,13 @@
 import Page from '@components/page';
 import Layout from '@components/layout';
 import Header from '@components/header';
-import cn from 'classnames';
+// import cn from 'classnames';
 import { META_DESCRIPTION } from '@lib/constants';
 import styles from './inscricoes.module.css';
 
 export default function Incricoes({ ...props }) {
 	const meta = {
-		title: 'Inscrições',
+		title: 'Inscrições Encerradas',
 		description: META_DESCRIPTION
 	};
 	return (
@@ -16,7 +16,8 @@ export default function Incricoes({ ...props }) {
 				<Header hero="Inscrições" />
 				<div className={styles.layout}>
 					<div className={styles.container}>
-						<div className={styles.formBox}>
+						<h1 className={styles.headingText}>Inscrições Encerradas</h1>
+						{/* 	<div className={styles.formBox}>
 							<h3 className={styles.headingText}>Formulário para Artistas:</h3>
 							<p className={styles.text}>
 								ESTE FORMULÁRIO É DESTINADO A TODO E QUALQUER ARTISTAS DO UNIVERSO.
@@ -74,7 +75,7 @@ export default function Incricoes({ ...props }) {
 									<path d="M10 14L21 3" />
 								</svg>
 							</a>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</Layout>
