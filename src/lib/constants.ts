@@ -24,10 +24,10 @@ export const REPO = 'https://www.ubqub.com/';
 export const UBQUB = 'https://www.ubqub.com/';
 export const SAMPLE_TICKET_NUMBER = 1234;
 export const NAVIGATION = [
-	{
-		name: 'O Festival',
-		route: '/festival'
-	},
+	// {
+	// 	name: 'O Festival',
+	// 	route: '/festival'
+	// },
 	// {
 	//   name: 'Stage A',
 	//   route: '/stage/a'
@@ -52,10 +52,10 @@ export const NAVIGATION = [
 	//   name: 'Speakers',
 	//   route: '/speakers'
 	// },
-	{
-		name: 'Equipe',
-		route: '/equipe'
-	},
+	// {
+	// 	name: 'Equipe',
+	// 	route: '/equipe'
+	// },
 	// {
 	// 	name: 'Inscrições',
 	// 	route: '/inscricoes'

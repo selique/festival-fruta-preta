@@ -23,10 +23,10 @@ export default function EquipePage({ sponsors }: Props) {
 
   return (
     <Page meta={meta}>
-      <Layout>
-        <Header hero="Equipe" description={meta.description} />
-        <SponsorsGrid sponsors={sponsors} />
-      </Layout>
+    //   <Layout>
+    //     <Header hero="Equipe" description={meta.description} />
+    //     <SponsorsGrid sponsors={sponsors} />
+    //   </Layout>
     </Page>
   );
 }

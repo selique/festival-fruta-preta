@@ -22,9 +22,9 @@ export default function TeamsPage({ sponsor }: Props) {
 
   return (
     <Page meta={meta}>
-      <Layout>
-        <SponsorSection sponsor={sponsor} />
-      </Layout>
+    //   <Layout>
+    //     <SponsorSection sponsor={sponsor} />
+    //   </Layout>
     </Page>
   );
 }
