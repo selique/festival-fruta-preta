@@ -1,0 +1,91 @@
+.layout {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.container {
+	display: flex;
+	padding: 6px;
+	min-width: initial;
+}
+
+.formBox {
+	border: solid 1px var(--secondary-color);
+	border-radius: var(--space-2x);
+	margin: var(--space-6x);
+	width: 50%;
+}
+
+@media (max-width: 1024px) {
+	.container {
+		flex-flow: column;
+	}
+	.formBox {
+		width: initial;
+	}
+}
+
+.text {
+	font-size: 20px;
+	color: var(--secondary-color);
+	padding: 0 24px;
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+}
+
+.headingText {
+	font-size: 28px;
+	line-height: 1;
+	font-weight: 800;
+	margin: var(--space-8x) 24px var(--space-2x);
+}
+
+.button {
+	border-radius: var(--space-2x);
+	border: 1px solid #fff;
+	color: #000;
+	background: #fff;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: var(--text-md);
+	letter-spacing: -0.02em;
+	font-weight: 500;
+	outline: none;
+	transition: background-color 0.2s ease;
+	padding: 0 var(--space-4x);
+	height: 55px;
+	max-width: 100%;
+	margin-right: var(--space-4x);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button:hover,
+.button:focus {
+	background: black;
+	color: #fff;
+}
+
+.button > svg {
+	margin-left: var(--space-2x);
+	min-height: var(--space-4x);
+	min-width: var(--space-4x);
+}
+
+.button-resource {
+	background: var(--brand-secundary) 10%;
+	color: #fff;
+	margin: 0 24px;
+	border: 1px solid var(--accents-7);
+	max-width: 100%;
+	margin-bottom: var(--space-4x);
+}
+
+.truncate {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
