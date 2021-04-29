@@ -1,0 +1,29 @@
+.layout {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.container {
+	display: block;
+	padding: 1rem;
+	min-width: initial;
+}
+
+.text {
+	font-size: 20px;
+	color: var(--secondary-color);
+	padding: 0 24px;
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+}
+
+.textBrand {
+	font-size: 20px;
+	color: var(--brand);
+	padding: 0 24px;
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+}
