@@ -1,0 +1,17 @@
+.learnMore {
+	text-align: center;
+	color: var(--secondary-color);
+	margin-bottom: var(--space-12x);
+	font-size: larger;
+}
+
+.learnMore-email {
+	color: var(--brand);
+	font-weight: bold;
+}
+
+.learnMore-email:hover {
+	text-decoration: underline;
+	font-weight: normal;
+	color: var(--brand);
+}
